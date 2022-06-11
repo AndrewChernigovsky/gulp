@@ -1,0 +1,19 @@
+extends ../modules/main.pug
+
+block variables
+    include ../abstraction/variables
+block head 
+    include ../partials/head/head
+
+block title
+    each text in titles
+        title= text.page1
+
+block content 
+    include ../sections/main-section/main-section
+    
+    each el in pov
+        if el[2]
+            li(class=liClass2)
+        li(class=liClass)=el
+    h3 HEEWFWEFWEF
