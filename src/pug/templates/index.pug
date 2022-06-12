@@ -6,7 +6,7 @@ block head
     include ../partials/head/head
 
 block title
-    each title,i in titles
+    each title in titles
         if title == indexTitles
             title= title.company
 
@@ -22,3 +22,8 @@ block content
     each texts, el in text
         if el == 0
             p(class=pClass)= texts
+
+    each url in urls
+        if url == urlLinkMenu
+            a(href=url.urlIndex) Index Page
+            a(href=url.urlCompany) About Company
