@@ -7,7 +7,8 @@ block head
 
 block title
     each title,i in titles
-        title= title.page1
+        if title == indexTitles
+            title= title.company
 
 block content 
     include ../sections/main-section/main-section
