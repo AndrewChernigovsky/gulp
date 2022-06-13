@@ -1,4 +1,5 @@
-extends ../modules/main.pug
+extends ../layout/main.pug
+include ../modules/mixins/list-products/list1
 
 block variables
     include ../abstraction/variables
@@ -12,12 +13,12 @@ block title
 
 block content 
     include ../sections/main-section/main-section
-    
-    each el in pov
-        if el[2]
-            li(class=liClass2)
-        li(class=liClass)=el
+
     h3 HEEWFWEFWEF
+
+    +list1('list1', ...list1)
+
+    include ../modules/includes/forms/form-name-phone
 
     each texts, el in text
         if el == 0
@@ -27,3 +28,6 @@ block content
         if url == urlLinkMenu
             a(href=url.urlIndex) Index Page
             a(href=url.urlCompany) About Company
+    p salut
+    each url, i in urls
+            a(href=url) ${i}
