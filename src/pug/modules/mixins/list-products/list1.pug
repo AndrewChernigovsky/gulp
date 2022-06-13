@@ -1,4 +1,5 @@
 mixin list1(id, ...items)
     ul(id=id)
         each item in items
-            li(class=listItem1)= item
+            li(class=listItem1)
+                a(class=listLink1)= item

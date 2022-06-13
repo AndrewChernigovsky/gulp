@@ -14,7 +14,8 @@ block title
 block content 
     include ../sections/main-section/main-section
 
-    h3 HEEWFWEFWEF
+    if title.company
+        h3 it's title = company
 
     +list1('list1', ...list1)
 
@@ -29,5 +30,6 @@ block content
             a(href=url.urlIndex) Index Page
             a(href=url.urlCompany) About Company
     p salut
+
     each url, i in urls
-            a(href=url) ${i}
+        a(href=url)
