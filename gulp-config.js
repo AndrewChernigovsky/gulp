@@ -83,6 +83,7 @@ module.exports = {
       `!{${this.folder.src}/js,${this.folder.src}/js/**}`,
       `!{${this.folder.src}/pug,${this.folder.src}/pug/**}`,
       `!{${this.folder.src}/scss,${this.folder.src}/scss/**}`,
+      `${this.folder.src}/php/**}`,
       `!{${this.folder.src}/vendor_entries,${this.folder.src}/vendor_entries/**}`,
     ];
   },

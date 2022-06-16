@@ -3,6 +3,7 @@ include ../modules/mixins/list-products/list1
 
 block variables
     include ../abstraction/variables
+    -   let mainPage= true
 block head 
     include ../partials/head/head
 
@@ -14,8 +15,10 @@ block title
 block content 
     include ../sections/main-section/main-section
 
-    if title.company
-        h3 it's title = company
+    if (mainPage)
+        h3 sexes
+    else
+        h2 eseees22
 
     +list1('list1', ...list1)
 
@@ -28,7 +31,7 @@ block content
     each url in urls
         if url == urlLinkMenu
             a(href=url.urlIndex) Index Page
-            a(href=url.urlCompany) About Company
+            a(href=urlPath.urlPathMenuFromIndex+ url.urlCompany) About Company
     p salut
 
     each url, i in urls

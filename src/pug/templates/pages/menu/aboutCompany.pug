@@ -1,0 +1,24 @@
+doctype html
+block variables
+    include ../../../abstraction/variables
+    - let innerPage = true;
+
+html(lang="en")
+    block head
+    
+    body 
+        include ../../../layout/header
+        block content
+            include ../../../modules/includes/sliders/slider
+        block footer
+            include ../../../layout/footer
+        block scripts
+        include ../../../partials/scripts/common
+
+            if (mainPage)
+                h3 sexes
+                h1 3
+            else if (innerPage)
+
+            else
+                h2 eseees22
