@@ -1,7 +1,10 @@
 -   let swiper = 'swiper'
 -   let wrapper = 'wrapper'
+-   let inner = 'inner'
 -   let slide = 'slide'
 -   let active = 'active'
+-   let swiperText = 'text'
+-   let swiperBlock = 'block'
 
 -   let intro = 'intro'
 -   let promo = 'promo'
@@ -17,10 +20,16 @@
 -   let mainSlide= swiper + '-' + main + '__' + slide
 -   let classSliderMain= swiper + ' ' + swiper + '-' + main + ' ' + main
 -   let classSliderMainWrapper= swiperWrapper + ' ' + mainWrapper
--   let classSliderMainSlide= swiperSlide + ' ' + mainSlide + ' ' + swiperSlideActive
+-   let classSliderMainSlide= swiperSlide + ' ' + mainSlide
+-   let classSliderMainSlideActive= swiperSlide + ' ' + mainSlide + ' ' + swiperSlideActive
 -   let classSliderMainSlideWrapper= swiperSlide + '__' +  slide + '-' + wrapper
+-   let classSliderMainSlideInner= swiperSlide + '__' +  slide + '-' + inner
+-   let classSliderMainSlideText= swiperSlide + '__' +  slide + '-' + swiperText + '-' + wrapper
+-   let classSliderMainSlideBlock= swiperSlide + '__' +  slide + '-' + swiperBlock
 
 -   let swiperMainID = 'swiperMain'
+-   let swiperIntroID = 'swiperIntro'
+-   let swiperPromoID = 'swiperPromo'
 
 //- SwiperIntro
 -   let classSliderIntro= swiper + ' ' + swiper + '-' + intro + ' ' + main
@@ -60,10 +69,29 @@
         classSliderPromo
     ]
 
-//- swiper wrapper slide
+//- swiper inner slide
 -
-    let arraySliderClassSlideWrapper= [
-        classSliderMainSlideWrapper, 
+    let arraySliderClassSlideInner= [
+        classSliderMainSlideInner, 
         classSliderIntro, 
         classSliderPromo
     ]
+
+//- swiper text slide
+-
+    let arraySliderClassSlideText= [
+        classSliderMainSlideText, 
+        classSliderIntro, 
+        classSliderPromo
+    ]
+
+//- swiper block slide
+-
+    let arraySliderClassSlideBlocks= [
+        classSliderMainSlideBlock, 
+        classSliderIntro, 
+        classSliderPromo
+    ]
+
+
+-   let className = slide + '-' + swiperText
