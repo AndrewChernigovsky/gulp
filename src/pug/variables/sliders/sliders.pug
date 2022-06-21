@@ -1,37 +1,21 @@
--
-    let swiper = {
-        swiper: "swiper",
-        swiperWrapper: "swiper-wrapper",
-        swiperSlide: "swiper-slide",
-        swiperSlide: "swiper-slide-active",
-        swiperPagination: "swiper-pagination",
-    };
-
-// -   let classSliderMain
--   let swiper1Array
--   let swiper2Array
+-   let swiper = 'swiper'
 
 -   let main = 'main'
+-   let intro = 'intro'
+-   let promo = 'promo'
 
-each main1 in swiper
-    if main1 == swiper
-        - let main11= main1.swiper
-
-- let classSliderMain= main11 + '-' + main + ' ' + main
-
-//- each main1 in swiper
-//-      if main1 == swiper
-//-         swiper1Array= [
-//-             main1,
-//-             swiperSecondText
-//-         ]
-
-//- each main1 in swiper
-//-     if main1 == swiper
-//-         swiper2Array= [
-//-             main1,
-//-             swiper3Text
-//-         ]
+-   let classSliderMain= swiper + ' ' + swiper + '-' + main + ' ' + main
+-   let classSliderIntro= swiper + ' ' + swiper + '-' + intro + ' ' + main
+-   let classSliderPromo= swiper + ' ' + swiper + '-' + promo + ' ' + main
 
 -
-    let swiperMain = 'swiperMain'
+    let arraySlidersClass= [
+        classSliderMain,
+        classSliderIntro,
+        classSliderPromo
+    ]
+
+-
+    let swiperMainID = 'swiperMain'
+
+ -  let swiperVar = 0
