@@ -1,21 +1,69 @@
 -   let swiper = 'swiper'
+-   let wrapper = 'wrapper'
+-   let slide = 'slide'
+-   let active = 'active'
 
--   let main = 'main'
 -   let intro = 'intro'
 -   let promo = 'promo'
+-   let main = 'main'
 
+//- defaultClasses
+-   let swiperWrapper = swiper + '-' + wrapper
+-   let swiperSlide = swiper + '-' + slide
+-   let swiperSlideActive = swiper + '-' + slide + '-' + active
+
+//- SwiperMain
+-   let mainWrapper = swiper + '-' + main + '__' + wrapper
+-   let mainSlide= swiper + '-' + main + '__' + slide
 -   let classSliderMain= swiper + ' ' + swiper + '-' + main + ' ' + main
+-   let classSliderMainWrapper= swiperWrapper + ' ' + mainWrapper
+-   let classSliderMainSlide= swiperSlide + ' ' + mainSlide + ' ' + swiperSlideActive
+-   let classSliderMainSlideWrapper= swiperSlide + '__' +  slide + '-' + wrapper
+
+-   let swiperMainID = 'swiperMain'
+
+//- SwiperIntro
 -   let classSliderIntro= swiper + ' ' + swiper + '-' + intro + ' ' + main
+
+//- SwiperPromo
 -   let classSliderPromo= swiper + ' ' + swiper + '-' + promo + ' ' + main
 
+//- swiper block
 -
     let arraySlidersClass= [
-        classSliderMain,
-        classSliderIntro,
+        classSliderMain, 
+        classSliderIntro, 
         classSliderPromo
     ]
 
+//- swiper wrapper
 -
-    let swiperMainID = 'swiperMain'
+    let arraySliderClassWrappers= [
+        classSliderMainWrapper, 
+        classSliderIntro, 
+        classSliderPromo
+    ]
 
- -  let swiperVar = 0
+//- swiper slide
+-
+    let arraySliderClassSlides= [
+        classSliderMainSlide, 
+        classSliderIntro, 
+        classSliderPromo
+    ]
+
+//- swiper wrapper slide
+-
+    let arraySliderClassSlideWrapper= [
+        classSliderMainSlideWrapper, 
+        classSliderIntro, 
+        classSliderPromo
+    ]
+
+//- swiper wrapper slide
+-
+    let arraySliderClassSlideWrapper= [
+        classSliderMainSlideWrapper, 
+        classSliderIntro, 
+        classSliderPromo
+    ]
