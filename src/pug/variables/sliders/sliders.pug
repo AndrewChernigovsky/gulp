@@ -5,6 +5,7 @@
 -   let active = 'active'
 -   let swiperText = 'text'
 -   let swiperBlock = 'block'
+-   let swiperImage = 'image'
 
 -   let intro = 'intro'
 -   let promo = 'promo'
@@ -26,6 +27,7 @@
 -   let classSliderMainSlideInner= swiperSlide + '__' +  slide + '-' + inner
 -   let classSliderMainSlideText= swiperSlide + '__' +  slide + '-' + swiperText + '-' + wrapper
 -   let classSliderMainSlideBlock= swiperSlide + '__' +  slide + '-' + swiperBlock
+-   let classSliderMainSlideImageWrapper= swiperSlide + '__' +  wrapper + '-' + swiperImage
 
 -   let swiperMainID = 'swiperMain'
 -   let swiperIntroID = 'swiperIntro'
@@ -89,6 +91,14 @@
 -
     let arraySliderClassSlideBlocks= [
         classSliderMainSlideBlock, 
+        classSliderIntro, 
+        classSliderPromo
+    ]
+
+//- swiper image-wrapper slide
+-
+    let arraySliderClassSlideImageWrapper= [
+        classSliderMainSlideImageWrapper, 
         classSliderIntro, 
         classSliderPromo
     ]
