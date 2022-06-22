@@ -5,6 +5,8 @@
 - let min = 'min'
 - let max = 'max'
 - let minWidth = 0;
+- let img = 'image'
+- let imageFeed1 = 'imageFeed'
 
 - let Width320 = min + '-width:320px'
 - let Width768 = min + '-width:768px'
@@ -17,33 +19,66 @@
         Width1024 
     ]
 
-- let img = 'image'
+
+-   let x2 = ' 2x'
+-   let x1 = ' 1x'
+-   let xx2 = '@2x'
+-   let xx1 = '@1x'
+-   let x2000x2000 = '2000x2000'
+-   let x1000x1000 = '1000x1000'
+
+-
+    let nameFile = [
+        'feed',
+        'filter'
+    ]
+
+-
+    let urlFiles = [
+        'assets/images/content/feedback/',
+    ]
+
+-   let nameImagexx2 = nameFile[0] + xx2 + x2000x2000 
+-   let nameImagexx1 = nameFile[0] + xx1 + x1000x1000 
+
+-   let fullNameImageUrlxx2 = urlFiles[0] + nameImagexx2
+-   let fullNameImageUrlxx1 = urlFiles[0] + nameImagexx1
 
 -
     let urlimg = [
-        'assets/images/content/feedback/name1',
-        'assets/images/content/feedback/name2',
-        'assets/images/content/feedback/name3',
+        fullNameImageUrlxx2,
+        fullNameImageUrlxx1,
+        fullNameImageUrl,
     ] 
 
 - let jpg = false
 
-- let src1W = urlimg[0] + typeWebp + ' 1x'
-- let src1J = urlimg[0] + typeJpg + ' 1x'
+- let src1Wx2 = urlimg[0] + typeWebp + x2
+- let src1Wx1 = urlimg[1] + typeWebp + x1
 
-- let src2W = urlimg[1] + typeWebp + ' 1x'
-- let src3J = urlimg[1] + typeJpg + ' 1x'
+- let src1J = urlimg[0] + typeJpg + x2
+
+- let src2Wx2 = urlimg[0] + typeWebp + x2
+- let src2Wx1 = urlimg[1] + typeWebp + x1
+
+- let src3J = urlimg[1] + typeJpg + x1
 
 -
     let src = [
-        src1W,
-        src1J,
+        src1Wx2,
+        src1Wx1,
     ]
 
 -
     let src1 = [
-        src2W,
-        src3J,
+        src2Wx2,
+        src2Wx1,
+    ]
+
+-
+    let srcArray1 = [
+        src,
+        src1
     ]
 
 -
@@ -51,9 +86,6 @@
         src,
         src1
     ]
-
-- let imageFeed1 = 'imageFeed'
-
 
 -
     let idImages = [
