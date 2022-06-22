@@ -1,0 +1,52 @@
+- let typesWebp = 'image/webp'
+- let typeWebp = '.webp'
+- let typeJpg= '.jpg'
+- let min = 'min'
+- let max = 'max'
+- let minWidth = 0;
+
+- let Width320 = min + '-width:320px'
+- let Width768 = min + '-width:768px'
+- let Width1024 = min + '-width:1024px'
+
+-
+    let mediaArr = [
+        Width320,
+        Width768,
+        Width1024 
+    ]
+
+- let img = 'image'
+
+-
+    let urlimg = [
+        'assets/images/content/feedback/name1',
+        'assets/images/content/feedback/name2',
+        'assets/images/content/feedback/name3',
+    ] 
+
+- let jpg = false
+
+- let src1W = urlimg[0] + typeWebp + ' 1x'
+- let src1J = urlimg[0] + typeJpg + ' 1x'
+
+- let src2W = urlimg[1] + typeWebp + ' 1x'
+- let src3J = urlimg[1] + typeJpg + ' 1x'
+
+-
+    let src = [
+        src1W,
+        src1J,
+    ]
+
+-
+    let src1 = [
+        src2W,
+        src3J,
+    ]
+
+-
+    let srcArray = [
+        src,
+        src1
+    ]

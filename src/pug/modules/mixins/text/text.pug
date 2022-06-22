@@ -1,0 +1,14 @@
+mixin pText
+    p(class=className)
+        if block
+            block
+        
+
+mixin spanText
+    span(class=className)
+        if block
+            block
+
+mixin aLink(urlLink, className, ...links)
+    each link in links
+        a(href=urlLink, class=className)= link

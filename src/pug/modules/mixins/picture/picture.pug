@@ -1,0 +1,8 @@
+mixin picture(idImg, className, ...source)
+    each src in source
+        if srcVal == 0
+            picture
+                source(type=typesWebp media=mediaArr[0] srcset=src[0])
+                each src1 in srcArray
+                    if src1 == src
+                        img(class=className src=src1[0] alt=idImg width=width height=height)
